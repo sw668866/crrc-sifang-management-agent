@@ -1,0 +1,38 @@
+{
+  "status": "Existing source leads transcribed from the approved v2.2 handoff; no new enterprise documents added",
+  "records": [
+    {
+      "id": "F-2023-ABC",
+      "entity": "中车青岛四方机车车辆股份有限公司",
+      "summary": "既有交接手册记录：2023年公开报道介绍了该公司在制造端推进作业成本法、作业动因数据采集以及核算分析的做法。",
+      "keywords": ["作业成本", "ABC", "动因", "制造", "成本管理"],
+      "source_title": "中车四方：以体系为基 精益为魂 从数业融合走向数字赋能",
+      "source_date": "2023-05-15",
+      "source_url": "https://www.rmlt.com.cn/2023/0515/673242.shtml",
+      "source_role": "既有交接文件所列公开报道；报道注明源自国资委网站，转载不能算独立证据",
+      "audit_status": "in_handoff_recheck_original_for_formal_report"
+    },
+    {
+      "id": "F-2023-REPORT",
+      "entity": "中车青岛四方机车车辆股份有限公司",
+      "summary": "既有交接手册记录：同一公开报道提及面向经营单元的边际贡献式管理会计报表，以及相关经营分析指标。",
+      "keywords": ["边际贡献", "管理会计报表", "经营单元", "报表", "EBITDA"],
+      "source_title": "中车四方：以体系为基 精益为魂 从数业融合走向数字赋能",
+      "source_date": "2023-05-15",
+      "source_url": "https://www.rmlt.com.cn/2023/0515/673242.shtml",
+      "source_role": "同一篇公开报道，不计为第二份独立来源",
+      "audit_status": "in_handoff_recheck_original_for_formal_report"
+    },
+    {
+      "id": "F-2023-FORECAST",
+      "entity": "中车青岛四方机车车辆股份有限公司",
+      "summary": "既有交接手册记录：同一公开报道介绍了标准成本阈值、动态本量利预测及经营分析的实践方向；不能据此推出企业使用了本组X/Y教学算法。",
+      "keywords": ["本量利", "预测", "阈值", "标准成本", "动态"],
+      "source_title": "中车四方：以体系为基 精益为魂 从数业融合走向数字赋能",
+      "source_date": "2023-05-15",
+      "source_url": "https://www.rmlt.com.cn/2023/0515/673242.shtml",
+      "source_role": "同一篇公开报道，不应重复计为多份独立证据",
+      "audit_status": "in_handoff_recheck_original_for_formal_report"
+    }
+  ]
+}

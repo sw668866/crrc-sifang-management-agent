@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "name": "中车四方管理会计案例教学模型",
+    "version": "handoff-v2.2-audited",
+    "date": "2026-10-27",
+    "status": "当前项目采用的教学参数候选基线；已复核算术，但不等于企业真实数据或用户逐项批准每个假设",
+    "currency": "CNY",
+    "source_type": "author_assumption",
+    "usage": "智能体开发的教学模型输入；禁止冒充企业台账；请与原始作业要求和v6首轮写作材料核对",
+    "previous_version": "handoff-v2.1-audited",
+    "schema_note": "v2.2锁定教学身份与文本说明、强制检验三项标准情景的具体参数，修复仅比较最优结果可能漏检参数变化；会计金额和三组计算结果不变"
+  },
+  "entity": {
+    "name": "中车青岛四方机车车辆股份有限公司",
+    "evidence": "企业公开做法仅以原始披露证实",
+    "fictional_product_labels": [
+      "X",
+      "Y"
+    ]
+  },
+  "T0": {
+    "period": "independent teaching period T0",
+    "quantity": {
+      "X": 100,
+      "Y": 100
+    },
+    "price_per_unit": {
+      "X": 1700,
+      "Y": 1900
+    },
+    "avoidable_variable_outlay_per_unit": {
+      "X": 950,
+      "Y": 1150
+    },
+    "fixed_resource_costs": {
+      "staff_support": 60000,
+      "equipment_depreciation_support": 40000
+    },
+    "resource_usage": {
+      "staff_hours": {
+        "preparation": 400,
+        "inspection_support": 200
+      },
+      "support_equipment_hours": {
+        "preparation": 100,
+        "inspection_support": 100
+      }
+    },
+    "activity_occurrences": {
+      "preparation": {
+        "X": 2,
+        "Y": 8
+      },
+      "inspection_support": {
+        "X": 10,
+        "Y": 30
+      }
+    },
+    "bottleneck_processing_hours_per_unit": {
+      "X": 2.0,
+      "Y": 1.5
+    },
+    "expected": {
+      "staff_rate_per_hour": 100,
+      "support_equipment_rate_per_hour": 200,
+      "preparation_pool_cost": 60000,
+      "inspection_support_pool_cost": 40000,
+      "preparation_rate_per_occurrence": 6000,
+      "inspection_support_rate_per_occurrence": 1000,
+      "allocated_support_cost": {
+        "X": 22000,
+        "Y": 78000
+      },
+      "allocated_unit_support_cost": {
+        "X": 220,
+        "Y": 780
+      },
+      "unit_internal_residual": {
+        "X": 530,
+        "Y": -30
+      },
+      "aggregate_contribution": 150000,
+      "simplified_period_residual": 50000,
+      "unit_allocation_by_quantity": {
+        "X": 500,
+        "Y": 500
+      },
+      "unit_allocation_by_processing_hours": {
+        "X": 571.4285714286,
+        "Y": 428.5714285714
+      }
+    },
+    "data_character": "独立教学期间的假设性已承诺资源费用及作业分配。资源小时率只作成本归集率，不代表可避免现金节约"
+  },
+  "T1": {
+    "period": "independent teaching period T1",
+    "no_external_base_business": true,
+    "no_preexisting_mandatory_orders": true,
+    "production_equals_sales": true,
+    "fixed_support_cost_independent_period": 100000,
+    "price_per_unit_base": {
+      "X": 1700,
+      "Y": 1900
+    },
+    "avoidable_variable_outlay_per_unit": {
+      "X": 950,
+      "Y": 1150
+    },
+    "bottleneck_processing_hours_per_unit": {
+      "X": 2.0,
+      "Y": 1.5
+    },
+    "minimum_quantity": {
+      "X": 0,
+      "Y": 0
+    },
+    "maximum_quantity": {
+      "X": 100,
+      "Y": 100
+    },
+    "integer_quantities": true,
+    "base_total_bottleneck_hours": 300,
+    "price_sensitivity_keeps_demand_fixed": true,
+    "scenarios": [
+      {
+        "id": "base_300",
+        "name": "基准",
+        "total_capacity_hours": 300,
+        "price_per_unit": {
+          "X": 1700,
+          "Y": 1900
+        },
+        "expected_optimal_quantity": {
+          "X": 75,
+          "Y": 100
+        },
+        "expected_total_contribution": 131250,
+        "expected_simplified_period_residual": 31250
+      },
+      {
+        "id": "restored_350",
+        "name": "可用工时恢复，无新增相关支出",
+        "total_capacity_hours": 350,
+        "price_per_unit": {
+          "X": 1700,
+          "Y": 1900
+        },
+        "expected_optimal_quantity": {
+          "X": 100,
+          "Y": 100
+        },
+        "expected_total_contribution": 150000,
+        "expected_simplified_period_residual": 50000,
+        "additional_fixed_outlay_for_scenario": 0
+      },
+      {
+        "id": "Y_price_1700",
+        "name": "Y价降低，固定需求上限",
+        "total_capacity_hours": 300,
+        "price_per_unit": {
+          "X": 1700,
+          "Y": 1700
+        },
+        "expected_optimal_quantity": {
+          "X": 99,
+          "Y": 68
+        },
+        "expected_total_contribution": 111650,
+        "expected_simplified_period_residual": 11650
+      }
+    ],
+    "data_character": "独立教学期间；300小时为本模型X/Y两类任务总可用能力；不是完成模型外已签订单后的剩余能力",
+    "dynamic_overrides_supported": [
+      "price_per_unit",
+      "avoidable_variable_outlay_per_unit",
+      "total_capacity_hours",
+      "minimum_quantity",
+      "maximum_quantity",
+      "bottleneck_processing_hours_per_unit",
+      "additional_fixed_outlay_for_scenario"
+    ],
+    "scenario_extra_cost_rule": "额外固定相关支出未提供时为0；若真实存在必须显式填入additional_fixed_outlay_for_scenario且需有独立来源/假设",
+    "base_restored_350_scenario_extra_cost_is_zero": true,
+    "model_convention": "T1的350小时基准情景在本套数据中额外恢复成本为0。拓展情景如有额外相关固定支出，应显式传入场景参数additional_fixed_outlay_for_scenario。"
+  },
+  "cross_period_rules": [
+    "T0历史ABC费用不可自动用作T1变动成本",
+    "T1固定支持费用是另一教学期间的独立同额假设",
+    "T1改变价格/需求/H不自动修改T0动因次数",
+    "额外产能需要额外成本时单独入模",
+    "未建模合同/库存/质量安全等不得给企业真实生产指令",
+    "检验支持作业发生次数与准备作业次数是不同活动动因，不能与法定逐件质检替换",
+    "T0综合相关变动支出包含可变销售履约支出，不能误称财务存货产品成本",
+    "用户上传旧版同名JSON时必须显示实际文件路径、版本，避免测试旧数据却宣称已通过新基线",
+    "业务场景未建模的额外费用与约束不得静默忽略：拒绝并提示扩展模型",
+    "T0作者假设全部已列示支持资源费用分配到两个作业池，未另设闲置能力费用池，旧版闲置成本24000不适用"
+  ],
+  "validation_tests": [
+    {
+      "id": "t0_balance",
+      "test": "所有资源归集于两个作业池；作业分配至X/Y总计100000",
+      "expect": "pass"
+    },
+    {
+      "id": "t0_residuals",
+      "test": "X=530,Y=-30且不误判停产",
+      "expect": "pass"
+    },
+    {
+      "id": "t1_300",
+      "test": "T1 300小时基准",
+      "expect": "X75 Y100 Z131250"
+    },
+    {
+      "id": "t1_350",
+      "test": "T1 350小时无增量相关费用",
+      "expect": "X100 Y100 Z150000"
+    },
+    {
+      "id": "t1_discount",
+      "test": "Y售价1700, H300",
+      "expect": "X99 Y68 Z111650, 比贪心X100/Y66高350"
+    },
+    {
+      "id": "negative_capacity",
+      "test": "H<0",
+      "expect": "参数验证失败，明确提示"
+    },
+    {
+      "id": "zero_capacity",
+      "test": "H=0 且最低需求都为0",
+      "expect": "x=y=0"
+    },
+    {
+      "id": "mandatory_infeasible",
+      "test": "H=0且强制X最低1件",
+      "expect": "报告无可行解，不伪造生产方案"
+    },
+    {
+      "id": "negative_contribution",
+      "test": "某类单位贡献为负且最低需求为0",
+      "expect": "不主动安排负贡献产品"
+    },
+    {
+      "id": "non_integer_demand",
+      "test": "产品件数出现非整数而模型要求整数",
+      "expect": "明确拒绝或要求重新定义订单单位"
+    },
+    {
+      "id": "T0_T1_independence",
+      "test": "修改T1 Y价格",
+      "expect": "不修改T0检验支持次数和历史ABC费率"
+    },
+    {
+      "id": "fiction_as_fact",
+      "test": "“中车四方真实Y订单亏损多少钱？”",
+      "expect": "无证据支持，不能生成企业真实值"
+    },
+    {
+      "id": "multi_optima",
+      "test": "构造单位贡献为零的T1有效情景",
+      "expect": "能提示并列最优，不随意称唯一最优"
+    },
+    {
+      "id": "numeric_nan_price",
+      "test": "价格NaN",
+      "expect": "明确拒绝，不能误报无可行解"
+    },
+    {
+      "id": "numeric_nan_hours",
+      "test": "单件工时NaN",
+      "expect": "明确拒绝，不输出非法小时的最优解"
+    },
+    {
+      "id": "boolean_is_number",
+      "test": "产能True、件数True",
+      "expect": "拒绝布尔数值"
+    },
+    {
+      "id": "unknown_extra_cost_field",
+      "test": "情景中出现未知费用字段",
+      "expect": "明确拒绝，不静默忽略"
+    },
+    {
+      "id": "changed_variable_cost",
+      "test": "修改T1单位相关变动成本",
+      "expect": "使用新成本重新优化，T0不变"
+    },
+    {
+      "id": "changed_demand",
+      "test": "修改T1需求上限",
+      "expect": "使用新需求重新优化，T0不变"
+    },
+    {
+      "id": "expected_tampered",
+      "test": "标准结果被篡改",
+      "expect": "测试识别与重新计算值不符"
+    },
+    {
+      "id": "file_mismatch",
+      "test": "Python文件与JSON文件重命名",
+      "expect": "程序通过--data显式读取、回显实际路径或明确失败"
+    }
+  ]
+}
