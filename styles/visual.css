@@ -1,0 +1,135 @@
+/* CRRC Sifang teaching agent — visual-only skin, no functional controls. */
+/* Only decorative styles; do not hide, reposition, overlay, or intercept widgets. */
+
+/* v3: a richer rail-systems visual treatment, still purely paint-only.
+   Embedded vector, no network request, extra DOM or additional hit target. */
+[data-testid="stMain"] {
+    background-image:
+        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDExMDAgODAwIj4KICA8dGl0bGU+UmFpbCBzeXN0ZW1zIGVuZ2luZWVyaW5nIHJlc2VhcmNoIG1vdGlmPC90aXRsZT4KICA8ZGVzYz5BYnN0cmFjdCBvcmlnaW5hbCBkZWNvcmF0aXZlIGRyYXdpbmcgb2YgYSB0cmFpbiwgdHJhY2tzLCBncmlkcyBhbmQgZ2VvbWV0cmljIG5ldHdvcmtzOyBubyBsb2dvcyBvciB0ZXh0LjwvZGVzYz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMzNTZEOUMiIHN0cm9rZS13aWR0aD0iMS43IiBvcGFjaXR5PSIuMTciPgogICAgPGNpcmNsZSBjeD0iNzIwIiBjeT0iMzA5IiByPSIyNTIiIHN0cm9rZS1kYXNoYXJyYXk9IjQgMTQiLz4KICAgIDxjaXJjbGUgY3g9IjcyMCIgY3k9IjMwOSIgcj0iMzAwIi8+CiAgICA8Y2lyY2xlIGN4PSI3MjAiIGN5PSIzMDkiIHI9IjIwMyIgc3Ryb2tlLWRhc2hhcnJheT0iOCAxMiIvPgogICAgPHBhdGggZD0iTTQwMiAzMDlIMTA1N003MjAgMVY2MjUiIHN0cm9rZS1kYXNoYXJyYXk9IjIgMTIiLz4KICAgIDxwYXRoIGQ9Ik03MjAgNzFBMjM4IDIzOCAwIDAgMSA5NTQgMjcwIiBzdHJva2U9IiNDNEEzNkMiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iLjciLz4KICAgIDxwYXRoIGQ9Ik03MjAgNTQ4QTIzOCAyMzggMCAwIDEgNTA4IDQxNyIgc3Ryb2tlPSIjQzRBMzZDIiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9Ii43Ii8+CiAgICA8cGF0aCBkPSJNNzIgMTQ0SDI5MEwzNDQgODhINTgwIi8+CiAgICA8cGF0aCBkPSJNOTk2IDE0MEgxMDQ4VjI4MiIvPgogICAgPHBhdGggZD0iTTg0IDU3NUgyNjZMMzIwIDYxN0g0ODUiLz4KICAgIDxwYXRoIGQ9Ik04MzAgNTg2SDEwMTRWNjc3Ii8+CiAgPC9nPgogIDxnIGZpbGw9IiMzQjc4QTYiIG9wYWNpdHk9Ii4yMiI+CiAgICA8Y2lyY2xlIGN4PSIyOTAiIGN5PSIxNDQiIHI9IjUiLz4KICAgIDxjaXJjbGUgY3g9IjU4MCIgY3k9Ijg4IiByPSI1Ii8+CiAgICA8Y2lyY2xlIGN4PSI5OTYiIGN5PSIxNDAiIHI9IjUiLz4KICAgIDxjaXJjbGUgY3g9IjEwNDgiIGN5PSIyODIiIHI9IjUiLz4KICAgIDxjaXJjbGUgY3g9IjI2NiIgY3k9IjU3NSIgcj0iNSIvPgogICAgPGNpcmNsZSBjeD0iNDg1IiBjeT0iNjE3IiByPSI1Ii8+CiAgICA8Y2lyY2xlIGN4PSI4MzAiIGN5PSI1ODYiIHI9IjUiLz4KICA8L2c+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzI2OTkxIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjI5Ij4KICAgIDxwYXRoIGQ9Ik0xODUgNDA4UTIwNCAzNjEgMjk1IDM0NFEzNzUgMzMwIDQ3NiAzMzBIODA0UTg1MiAzMzEgODc5IDM1NUw5MzQgNDA5UTk1NiA0MzUgOTE1IDQ0NkgyMzFRMTg1IDQ0NyAxODUgNDA4WiIvPgogICAgPHBhdGggZD0iTTIwNSA0MDNIOTIxIiBzdHJva2Utd2lkdGg9IjEuNyIgb3BhY2l0eT0iLjYiLz4KICAgIDxwYXRoIGQ9Ik0yODYgMzUwUTI0MCAzNjAgMjM1IDM5MkgzODNWMzQ2WiIvPgogICAgPHBhdGggZD0iTTQwNiAzNDZINDk3VjM5Mkg0MDZaIi8+CiAgICA8cGF0aCBkPSJNNTE4IDM0Nkg2MDlWMzkySDUxOFoiLz4KICAgIDxwYXRoIGQ9Ik02MzEgMzQ2SDcyMlYzOTJINjMxWiIvPgogICAgPHBhdGggZD0iTTc0NSAzNDZIODA5UTgzOCAzNDkgODUxIDM5Mkg3NDVaIi8+CiAgICA8cGF0aCBkPSJNODY5IDM2M0w5MTcgNDEwIiBzdHJva2Utd2lkdGg9IjIuMiIvPgogICAgPHBhdGggZD0iTTIyNSA0MzFIOTE2IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogICAgPHBhdGggZD0iTTM0MSA0NDRMMzU5IDQ2M0g0MjlMNDQzIDQ0NE03NDkgNDQ0TDc2NSA0NjNIODM4TDg1MiA0NDQiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8Y2lyY2xlIGN4PSIzOTYiIGN5PSI0NjQiIHI9IjE4IiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjgwMiIgY3k9IjQ2NCIgcj0iMTgiIHN0cm9rZS13aWR0aD0iMiIvPgogIDwvZz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNDNkE0NkEiIHN0cm9rZS13aWR0aD0iMi42IiBvcGFjaXR5PSIuMjciPgogICAgPHBhdGggZD0iTTExOCA1MDVIOTg1Ii8+CiAgICA8cGF0aCBkPSJNMTE4IDUyNEg5ODUiLz4KICAgIDxwYXRoIGQ9Ik0xNTIgNDk4TDE0MCA1MzFNMjEyIDQ5OEwyMDAgNTMxTTI3MiA0OThMMjYwIDUzMU0zMzIgNDk4TDMyMCA1MzFNMzkyIDQ5OEwzODAgNTMxTTQ1MiA0OThMNDQwIDUzMU01MTIgNDk4TDUwMCA1MzFNNTcyIDQ5OEw1NjAgNTMxTTYzMiA0OThMNjIwIDUzMU02OTIgNDk4TDY4MCA1MzFNNzUyIDQ5OEw3NDAgNTMxTTgxMiA0OThMODAwIDUzMU04NzIgNDk4TDg2MCA1MzFNOTMyIDQ5OEw5MjAgNTMxIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDwvZz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMzNTZEOUMiIG9wYWNpdHk9Ii4xNSIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgIDxwYXRoIGQ9Ik0xNjcgNzU1TDQ2MyA1NDQiLz4KICAgIDxwYXRoIGQ9Ik0xMDUwIDc1NUw2ODEgNTQ0Ii8+CiAgICA8cGF0aCBkPSJNMjQwIDcxNEg5NzAiIHN0cm9rZS1kYXNoYXJyYXk9IjcgMTAiLz4KICAgIDxwYXRoIGQ9Ik0yOTcgNjY5SDg5OSIgc3Ryb2tlLWRhc2hhcnJheT0iNyAxMCIvPgogICAgPHBhdGggZD0iTTM1MSA2MjVIODI2IiBzdHJva2UtZGFzaGFycmF5PSI3IDEwIi8+CiAgICA8cGF0aCBkPSJNNDA4IDU4MEg3NDgiIHN0cm9rZS1kYXNoYXJyYXk9IjcgMTAiLz4KICAgIDxwYXRoIGQ9Ik00NzYgNTMwTDQwNiA1NzdNNjgxIDUzMEw3NTEgNTc3Ii8+CiAgPC9nPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzQ1NkU5NCIgc3Ryb2tlLXdpZHRoPSIxLjQiIG9wYWNpdHk9Ii4xOCI+CiAgICA8cGF0aCBkPSJNMTE0IDI4MFYyNTJIMTQ3TTExNCAyODBIMTQ3TTEwMzAgMzM4SDEwNjFWMzA2TTEwMzAgMzM4VjMwNiIvPgogICAgPHBhdGggZD0iTTEzMyA1OTdWNjMwSDE2OE0xMDA0IDU5NlY2MzBIOTY5Ii8+CiAgICA8cGF0aCBkPSJNMjEwIDIzNkg5NzIiIHN0cm9rZS1kYXNoYXJyYXk9IjIgMTIiLz4KICAgIDxwYXRoIGQ9Ik01MjYgMTA1TDU4MyAxNjJINzQ4Ii8+CiAgICA8cGF0aCBkPSJNMzg2IDE4NEg1MjJMNTc3IDIzNyIvPgogICAgPHBhdGggZD0iTTg5NCAyNDlIMTAxMiIvPgogIDwvZz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNCRjlDNjQiIG9wYWNpdHk9Ii4xNyIgc3Ryb2tlLXdpZHRoPSI0Ij4KICAgIDxwYXRoIGQ9Ik00MyA3MjRMMzM0IDQ0MiIvPgogICAgPHBhdGggZD0iTTc3IDc2MEwzNjMgNDc1Ii8+CiAgICA8cGF0aCBkPSJNOTY5IDVMMTA5OSAxNDQiLz4KICA8L2c+Cjwvc3ZnPgo="),
+        linear-gradient(rgba(43, 100, 145, .062) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(43, 100, 145, .062) 1px, transparent 1px),
+        radial-gradient(ellipse at 86% 70%, rgba(51, 125, 179, .19), transparent 60%),
+        linear-gradient(118deg, rgba(244, 249, 253, .9), rgba(231, 241, 249, .43));
+    background-size: min(80vw, 950px) auto, 30px 30px, 30px 30px, auto, auto;
+    background-position: right 1% top 180px, 0 0, 0 0, center, center;
+    background-repeat: no-repeat, repeat, repeat, no-repeat, no-repeat;
+}
+
+/* Richer dark dashboard treatment for the existing sidebar. Theme controls
+   text/widget contrast; this decorative background does not affect geometry. */
+[data-testid="stSidebar"] {
+    background-color: #17324E;
+    background-image:
+        radial-gradient(ellipse at 86% 85%, rgba(90, 149, 199, .21), transparent 50%),
+        repeating-linear-gradient(137deg,
+            transparent 0 32px,
+            rgba(234, 246, 255, .044) 33px 34px,
+            transparent 35px 54px),
+        linear-gradient(164deg, #17324E, #10263E 98%);
+}
+
+/* Existing page title, not an additional component. */
+[data-testid="stMain"] h1 {
+    position: relative;
+    isolation: isolate;
+    color: #FFFFFF !important;
+}
+
+/* Paint behind the original heading without changing its padding or height. */
+[data-testid="stMain"] h1::before {
+    content: "";
+    position: absolute;
+    inset: -7px -18px -5px -18px;
+    z-index: -1;
+    border-radius: 14px;
+    border: 1px solid rgba(170, 203, 233, .25);
+    background:
+        linear-gradient(90deg, #CFAC71 0 6px, transparent 6px),
+        repeating-linear-gradient(133deg,
+            transparent 0 27px,
+            rgba(255, 255, 255, .065) 28px 29px,
+            transparent 30px 43px),
+        radial-gradient(ellipse at 82% 17%, rgba(110, 183, 231, .42), transparent 48%),
+        linear-gradient(108deg, #102A46 2%, #1B4265 56%, #2E6E9C 100%);
+    box-shadow: 0 8px 22px rgba(21, 53, 86, .12);
+    pointer-events: none;
+}
+
+[data-testid="stMain"] h1 span,
+[data-testid="stMain"] h1 a {
+    color: inherit !important;
+}
+
+/* Two oblique parallel rails, contained inside the title so they can't cover controls. */
+[data-testid="stMain"] h1::after {
+    content: "";
+    position: absolute;
+    width: 128px;
+    height: 28px;
+    right: 8px;
+    bottom: 1px;
+    border-top: 2px solid rgba(219, 191, 126, .72);
+    border-bottom: 2px solid rgba(219, 191, 126, .72);
+    transform: skewX(-29deg);
+    pointer-events: none;
+}
+
+/* Keep original heading order and document structure. */
+[data-testid="stMain"] h3 {
+    padding-left: 12px;
+    border-left: 3px solid #C79A58;
+}
+
+/* Gentle refinement of pre-existing status, form, and result panels. */
+[data-testid="stAlert"],
+[data-testid="stForm"],
+[data-testid="stMetric"] {
+    border-radius: 12px;
+}
+
+/* Keep text-heavy calculator forms opaque above the optional watermark. */
+[data-testid="stForm"] {
+    background-color: rgba(255, 255, 255, .975);
+}
+
+/* Decorative depth only; no margin/padding/dimensions are changed. */
+[data-testid="stAlert"],
+[data-testid="stForm"] {
+    box-shadow: 0 3px 17px rgba(38, 74, 107, .055);
+}
+
+/* On narrower desktops, the fixed decoration may approach a wrapped title. */
+@media (max-width: 1200px) {
+    [data-testid="stMain"] h1::after {
+        display: none;
+    }
+}
+
+/* Full watermark only when the large screen has spare visual space. */
+@media (max-width: 1100px) {
+    [data-testid="stMain"] {
+        background-image:
+            linear-gradient(rgba(43, 100, 145, .043) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(43, 100, 145, .043) 1px, transparent 1px);
+        background-size: 30px 30px, 30px 30px;
+        background-position: 0 0, 0 0;
+        background-repeat: repeat, repeat;
+    }
+}
+
+@media (max-width: 760px) {
+    [data-testid="stMain"] h1::after {
+        display: none;
+    }
+}
+
+/* Respect accessibility modes; never leave white text without its banner. */
+@media (forced-colors: active), print {
+    [data-testid="stMain"] h1 {
+        color: CanvasText !important;
+    }
+    [data-testid="stMain"] h1::before,
+    [data-testid="stMain"] h1::after {
+        display: none;
+    }
+}
