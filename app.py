@@ -101,8 +101,11 @@ model = _setting("QWEN_MODEL", "qwen3.7-flash")
 api_ready = _looks_like_configured_api(key, base_url)
 
 st.title("中车四方 · 管理会计决策辅助智能体")
+
+st.space(12)
+
 st.caption(
-    "大学管理会计案例的作者教学模拟工具｜"
+    "大连交通大学管理会计案例报告教学模拟工具｜"
     f"计算基线：{identity['baseline_version']}｜"
     f"智能体工程：{identity['agent_version']}"
 )
