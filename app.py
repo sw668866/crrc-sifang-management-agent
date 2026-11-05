@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 from datetime import datetime, timezone
+from pathlib import Path
 
 import streamlit as st
 
@@ -19,6 +20,9 @@ st.set_page_config(
     page_icon="📊",
     layout="wide",
 )
+
+# 仅加载外观样式：不创建新控件，不改动任何计算、模型或会话逻辑。
+st.html(Path(__file__).resolve().parent / "styles" / "visual.css")
 
 
 def _setting(name: str, fallback: str = "") -> str:
